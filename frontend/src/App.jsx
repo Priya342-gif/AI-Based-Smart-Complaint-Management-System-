@@ -61,9 +61,9 @@ function App() {
                 }
               />
 
-              {/* Default — guests go to /login, logged-in go to /complaints */}
-              <Route path="/" element={<Navigate to="/complaints" replace />} />
-              <Route path="*" element={<Navigate to="/complaints" replace />} />
+              {/* Default — guests go to /register first, logged-in go to /complaints */}
+              <Route path="/" element={<Navigate to="/register" replace />} />
+              <Route path="*" element={<Navigate to="/register" replace />} />
             </Routes>
           </main>
         </div>
